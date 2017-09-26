@@ -1,0 +1,11 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var start = -1 * target.length;
+  if(str.substr(start) == target){
+    return true;
+  }
+  return false;
+}
+
+confirmEnding("sesame", "same");
