@@ -1,0 +1,12 @@
+function destroyer(arr) {
+  // Remove all the values
+  var args = Array.from(arguments);
+  for (var i = 1; i < args.length; i++){
+    arr = arr.filter(function(word){
+    return word != args[i];
+    });
+  }
+  return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
